@@ -2,7 +2,7 @@
 body{
     background-color: rgb(27, 30, 47);
     color: rgb(224, 222, 204);
-    font-family: "Inter", sans-serif;
+    font-family: inter, sans-serif;
 }
 
 a{
@@ -58,6 +58,7 @@ footer{
     align-items: center;
     text-align: center;
     margin: 20px;
+    font-family: jua, inter, sans-serif;
 }
 
 /* GALLERY PAGE */
@@ -82,6 +83,7 @@ table {
     border-collapse: collapse;
     width: 100%;
     margin: 20px 0;
+    border: 1px solid #ddd;
 }
 
 th, td {
