@@ -7,6 +7,8 @@
     <!-- Required Meta Tags -->
     <meta name="Aricia" content="Digital Diary" description="A digital diary to document the things I've made." author="Aricia">
     <meta keywords="digital diary, diary, journal, personal, archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     
     <!-- Link to CSS stylesheet -->
     <link rel="stylesheet" href="./css/styles.css">
@@ -19,28 +21,43 @@
 <body>
     <!-- Navigation bar -->
     <nav class="navigation">
-        <h1>Aricia Chan</h1>
+        <h1>✧˖°</h1>
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
         <a href="form.html">Form</a>
         <a href="map.html">Map</a>
         <a href="table.html">Table</a>
+        <a href="writing.html">Writing</a>
     </nav>
     
     <!-- Introduction Section -->
     <div class="intro">
-        <p>I'm currently a student studying design, working at
-        <a href="https://headstarter.co/">Headstarter</a> and
-        <a href="https://magichour.ai/">Magic Hour</a>.
-        I spend my spare time writing, reading, and crocheting cute things. This is a digital diary to document the things I like and am working on.</p>
-        <img src="./images/toronto.JPG" alt="Toronto" width="300"/>
+        <div id="intro-text">
+            <h2>hey, I'm aricia 𐔌՞. .՞𐦯</h2>
+            <p>I'm currently a student studying design, working at
+            <a href="https://headstarter.co/">Headstarter</a> and
+            <a href="https://magichour.ai/">Magic Hour</a>.
+            <p>I spend my spare time writing, reading, and crocheting cute things.</p>
+            <p>This site is to document little reflections and the things that make me happy. I hope to design things that make people smile.</p>
+            <br>
+            <p id="extra-practice">I also want to get better at HTML/CSS, so this is a good excuse to practice!</p>
+                <div class="fortune-cookie">
+        <h2>Fortune Cookie 🍪⋆˚｡⋆</h2>
+        <button id="fortune-btn">Open a Cookie</button>
+        <p id="fortune-text"></p>
     </div>
+        </div>
+        <img src="./images/toronto.JPG" alt="Toronto"/>
+    </div>
+
+
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Aricia's Digital Archive</p>
         <a href="mailto:ariciac@andrew.cmu.edu">ariciac@andrew.cmu.edu</a>
     </footer>
+    <script src="fortune.js"></script>
 
 </body>
 </html>

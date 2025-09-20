@@ -2,7 +2,14 @@
 body{
     background-color: rgb(27, 30, 47);
     color: rgb(224, 222, 204);
-    font-family: inter, sans-serif;
+    font-family: jua, sans-serif;
+
+    display: flex;
+    flex-direction: column;
+    max-width: 700px;
+    overflow: hidden;
+    justify-content: center;
+    margin: 0 auto;
 }
 
 a{
@@ -23,6 +30,11 @@ h1{
 h2{
     font-family: "Crimson Text", serif;
     font-weight: 400;
+    margin: 0;
+}
+
+img{
+    border-radius: 3px;
 }
 
 /* NAVGATION BAR */
@@ -30,10 +42,12 @@ h2{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 0.5px solid rgb(224, 222, 204);
+    border-bottom: 0.5px solid rgb(224, 222, 204, 0.5);
     padding: 0px 10px;
     position: sticky;
     margin-bottom: 20px;
+    font-family: jua, inter, sans-serif;
+    text-transform: lowercase;
 }
 
 .navigation a{
@@ -48,17 +62,34 @@ h2{
 /* FOOTER */
 footer{
     text-align: center;
-    border-top: 0.5px solid rgb(224, 222, 204);
+    border-top: 0.5px solid rgb(224, 222, 204, 0.5);
+    margin-top: 20px;
 }
 
 
 /* HOME PAGE */
 .intro{
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
     font-family: jua, inter, sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 20px;
+}
+
+.intro img{
+    flex: 1.5;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.intro #intro-text{
+    flex: 2;
+}
+
+#extra-practice{
+    font-size: 14px;
+    font-style: italic;
 }
 
 /* GALLERY PAGE */
@@ -113,4 +144,29 @@ form {
 
 fieldset{
     background-color: #3f355f;
+}
+
+/* FORTUNE COOKIE */
+.fortune-cookie {
+    text-align: left;
+    padding: 5px 20px;
+    border: rgb(224, 222, 204, 0.5) 0.5px solid;
+    border-radius: 3px;
+}
+
+#fortune-btn {
+    border: 1px solid #ddd;
+    background-color: transparent;
+    color: #ddd;
+    font-family: jua, inter;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#fortune-btn:hover {
+    background-color: rgb(224, 222, 204);
+    color: rgb(27, 30, 47);
 }
