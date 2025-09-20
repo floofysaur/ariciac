@@ -75,6 +75,7 @@ footer{
     align-items: flex-start;
     text-align: left;
     gap: 20px;
+    width: 100%;
 }
 
 .intro img{
